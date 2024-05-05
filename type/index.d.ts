@@ -14,3 +14,11 @@ declare interface TotalBalanceBoxProps {
 declare interface DoughnutChartProps {
     accounts: [];
 }
+
+declare interface SideBarProps {
+    user: {firstName: string, lastName: string}
+}
+
+declare interface MobileNavProps {
+    user: {firstName: string, lastName: string}
+}
