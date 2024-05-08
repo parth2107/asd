@@ -16,9 +16,21 @@ declare interface DoughnutChartProps {
 }
 
 declare interface SideBarProps {
-    user: {firstName: string, lastName: string}
+    user: {firstName: string, lastName: string};
 }
 
 declare interface MobileNavProps {
-    user: {firstName: string, lastName: string}
+    user: {firstName: string, lastName: string};
+}
+
+declare interface RightSideBarProps {
+    user: {firstName: string, lastName: string, email: string};
+    transactions: [];
+    banks: [];
+}
+
+declare interface BankCardProps {
+    account: {};
+    userName: string;
+    showBalance: boolean;
 }
