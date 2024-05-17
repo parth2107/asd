@@ -51,6 +51,10 @@
     @apply text-[30px] leading-[38px];
   }
 
+  .text-36 {
+    @apply text-[36px] leading-[44px];
+  }
+
   /* Home */
   .home {
     @apply no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
@@ -168,5 +172,34 @@
 
   .mobilenav-sheet_close {
     @apply flex gap-3 items-center p-4 rounded-lg w-full max-w-60;
+  }
+
+  /* Auth form */
+  .auth-form {
+    @apply flex flex-col w-full min-h-screen max-w-[420px] justify-center gap-5 py-10 md:gap-8;
+  }
+
+  .form-item {
+    @apply flex flex-col gap-1.5;
+  }
+
+  .form-label {
+    @apply text-14 font-medium w-full max-w-[280px] text-gray-700;
+  }
+
+  .form-message {
+    @apply text-12 text-red-500;
+  }
+
+  .form-btn {
+    @apply text-16 rounded-lg border border-bankGradient bg-bank-gradient font-semibold text-white shadow-form;
+  }
+
+  .form-link {
+    @apply text-14 cursor-pointer font-medium text-bankGradient;
+  }
+
+  .input-class {
+    @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
 }
