@@ -202,4 +202,29 @@
   .input-class {
     @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
+
+  /* Footer */
+  .footer {
+    @apply flex cursor-pointer items-center justify-between gap-2 py-6;
+  }
+  
+  .footer_name {
+    @apply flex size-10 items-center justify-center rounded-full bg-gray-200 max-xl:hidden;
+  }
+
+  .footer_email {
+    @apply flex flex-1 flex-col justify-center max-xl:hidden;
+  }
+
+  .footer_name-mobile {
+    @apply flex size-10 items-center justify-center rounded-full bg-gray-200;
+  }
+
+  .footer_email-mobile {
+    @apply flex flex-1 flex-col justify-center;
+  }
+
+  .footer_image {
+    @apply relative size-5 max-xl:w-full max-xl:flex max-xl:justify-center max-xl:items-center;
+  }
 }

@@ -1,3 +1,37 @@
+declare type SignUpParams = {
+    firstName?: string;
+    lastName?: string;
+    address1?: string;
+    city?: string;
+    state?: string;
+    postalCode?: string;
+    dateOfBirth?: string;
+    ssn?: string;
+    email: string;
+    password: string;
+}
+
+declare type User = {
+    $id: string;
+    email: string;
+    userId: string;
+    dwollaCustomerUrl: string;
+    dwollaCustomerId: string;
+    firstName: string;
+    lastName: string;
+    name: string;
+    address1: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    dateOfBirth: string;
+    ssn: string;
+}
+
+declare interface SignInProps {
+    email: string;
+    password: string;
+}
 declare interface HeaderBoxProps {
     type?:'title' | 'greeting';
     title: string;
@@ -16,15 +50,15 @@ declare interface DoughnutChartProps {
 }
 
 declare interface SideBarProps {
-    user: {firstName: string, lastName: string};
+    user: User;
 }
 
 declare interface MobileNavProps {
-    user: {firstName: string, lastName: string};
+    user: User;
 }
 
 declare interface RightSideBarProps {
-    user: {firstName: string, lastName: string, email: string};
+    user: User;
     transactions: [];
     banks: [];
 }
@@ -33,4 +67,9 @@ declare interface BankCardProps {
     account: {};
     userName: string;
     showBalance: boolean;
+}
+
+declare interface FooterProps {
+    user: User;
+    type?: 'mobile' | 'desktop';
 }
